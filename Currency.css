@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+}
+
+body {
+    background-image: url(Gradient\ ffflux.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 25em;
+    background-color: #f1eaff25; 
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 2em;
+    border-radius: 4em;
+    box-shadow: 12px 10px 50px 2px;
+    
+}
+
+.app-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.app-icon {
+    width: 9.37em;
+}
+
+.app-title {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    color: #e5d4ff; 
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    color: #dcbfff; 
+}
+
+input#amount {
+    font-weight: 400;
+    font-size: 1.2em;
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #d0a2f7; 
+    color: #bf00ff;
+    margin-bottom: 2em;
+    padding: 0.5em;
+    background-color: #f1eaff;
+    border-radius: 10px;
+}
+
+input#amount:focus {
+    color: #bf00ff;
+    border-color: #d0a2f7;
+    border-radius: 10px;
+}
+
+.dropdowns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+select {
+    width: 100%;
+    padding: 0.6em;
+    font-size: 1em;
+    border-radius: 0.2em;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("down-arrow.png");
+    background-repeat: no-repeat;
+    background-position: right 15px top 50%, center;
+    background-size: 20px 20px;
+    background-color: #dcbfff; 
+    color: #bf00ff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+select:hover{
+    background-color: #d042ff; 
+    box-shadow: 0 0 6px #cc38fe, 0 0 10px #bf00ff, 0 0 40px #bf00ff; /* umbrire pentru efectul de neon */
+    transition: box-shadow 0.3s ease; 
+    
+    transition: 0.3s;
+    color: #ffffff;
+
+}
+
+select option {
+    background-color: #e5d4ff; 
+    color: #bf00ff;
+    border-radius: 10px;
+}
+
+button {
+    font-size: 1em;
+    width: 100%;
+    background-color: #d0a2f7; 
+    padding: 1em 0;
+    margin-top: 2em;
+    border-radius: 0.3em;
+    color: #bf00ff;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #d042ff; /* culoare de neon la hover */
+    box-shadow: 0 0 6px #cc38fe, 0 0 10px #bf00ff, 0 0 40px #bf00ff; /* umbrire pentru efectul de neon */
+    transition: box-shadow 0.3s ease; 
+    font-size: 1em;
+    transition: 0.3s;
+    color: #ffffff;
+}
+
+button:active{
+    position: relative;
+    top: 3px;   
+}
+
+#result {
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 1em;
+    color: #ffffff;
+    background-color: #d0a2f7; 
+    padding: 0.8em 0;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 15px 2px;
+}
